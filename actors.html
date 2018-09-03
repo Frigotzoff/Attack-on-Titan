@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actors</title>
+	<title>A.O.T</title>
+	<link rel="icon" href="res/logo.jpg" type="image/png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	 crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script  src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+</head>
+<body>
+	<nav id="bootnav" class="navbar navbar-inverse">
+		  <div class="container-fluid">
+	   	 	 <div class="navbar-header">
+	     		 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	      		  <span class="icon-bar"></span>
+	       		  <span class="icon-bar"></span>
+	              <span class="icon-bar"></span> 
+	             </button>
+	             <a class="navbar-brand" href="home.html">Attack On Titan</a>
+	      	 </div>
+	   		 <div class="collapse navbar-collapse" id="myNavbar">
+	    	 	 <ul class="nav navbar-nav">
+	      	  		 <li><a href="history.html">History</a></li>
+	      	 		 <li><a href="actors.html">Actors</a></li> 
+	       			 <li><a href="Anime.html">Anime</a></li> 
+	       			 <li><a href="Manga.html">Manga</a></li> 
+	       			 <li><a href="Game.html">Game</a></li> 
+	       			 <li><a href="Music.html">Music and Oppenings</a></li>
+	     	     </ul>
+	     	 	<ul class="nav navbar-nav navbar-right">
+					<!-- Authentication dropdown -->
+
+
+					<li class="dropdown">
+						<a href="#" id="dropbtn" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+
+							<i class="fa fa-user"></i>
+							 &nbsp <span id = "result"></span>
+							<span class="caret"></span>
+						</a>
+
+						<ul class="dropdown-menu">
+
+							<li>
+								<a id="outBtn" class="btn btn-secondary" >Log Out</a>
+							</li> 
+						</ul>
+					</li>
+				</ul>
+	  	     </div>
+	   	 </div>
+		        </nav>
+	
+	<div class="container" id="container">
+			<center><h1 id="loula">Actors</h1></center><br><br>
+			   
+					<div class="textOverImage">
+						   	<img class="image1" src="res/Eren.jpg"  >
+			<div class="image-caption1">   
+			<h2>Eren</h2>
+			 <p class="para" >Eren Yeager (???·?????)
+							Age: 15
+							Birthdate: March 30
+							Height: 170 cm (5'7")
+							Weight: 63 kg (139 lbs)
+							Position: 104th Trainees Squad,
+							 Scouting Legion
+							Graduation rank: 5th
+							
+							Eren is Shingeki no Kyojin's protagonist.
+							 His adoptive sister, 
+							Mikasa, notes on numerous occasions that he acts on
+							 impulse without thinking things through,
+							 and she often pulls/carries/throws him when 
+							 he starts fighting with others to protec
+							 t him from himself.
+							His father is a doctor
+							 (whom is well respected by Hannes and potentially many more)
+							 whilst his mother is a housewife.
+							 </p>
+							 </div>
+							 </div>
+							 <br>
+							
+						
+			   
+						  <div class="textOverImage floatright">
+							<img class="image2"  src="res/Erwin.jpg" >
+							<div class="image-caption2"><h2>Erwin</h2>
+							<p class="para">	Erwin Smith (?????·???)
+								Birthday: October 14
+								Height: 188 cm (6' 2")
+								Weight: 92 kg (203 lbs)
+								Affiliation: Scouting Legion
+								
+								Commander of the Scouting Legion, 
+								known for his foresight, intelligence and drive. 
+								His ultimate goal is for humanity to return to its former glory, 
+								and would sacrifice any number of his men for the sake of mankind as a whole.
+								
+								Note: Erwin is the official English transliteration by Kodansha.</p>
+								</div>
+								 
+						  </div>
+						  <br>
+						  
+			   
+						  <div class="textOverImage">
+							<img class="image3"  src="res/Hange Zoë.jpg">
+							<div class="image-caption3"><h2>Hange Zoe</h2><p class="para">Zoe
+								Hange Zoë (???·??)
+								Age: Unknown
+								Birthday: September 5
+								Height: 170 cm (5'7")
+								Weight: 60 kg (132 lbs)
+								Affiliations: Scouting Legion
+								
+								Scouting Legion's Squad Leader.
+								
+								Hange is very passionate and driven in pursuit of new knowledge.
+								 She can be seen as very hyperactive, 
+								 often diving into projects without thought for personal safety 
+								 (and frightening lots of subordinates in the process),
+									instead preoccupied with observing and documenting the subjects.
+									 Some misunderstand these acts and Hange is seen as eccentric 
+									 and having more than a few screws loose. 
+									 She also enjoys discussing this research, 
+									 but as the lectures can be very long and detail-oriented, 
+									 not many fellow soldiers find them interesting.
+								.</p>
+								 </div>
+								 <br>
+						  </div>
+						  <div class="textOverImage floatright">
+								<img class="image4"  src="res/Mikassa.jpg">
+								<div class="image-caption4"><h2>Mikassa</h2><p class="para"> Mikasa
+									Mikasa Ackerman (???·??????)
+									Age: 15
+									Birthdate: February 10
+									Height: 170 cm (5'7")
+									Weight: 68 kg (150 lbs)
+									Position: 104th Trainees Squad, Scouting Legion
+									Graduation rank: 1st
+									
+									Mikasa is Eren's adoptive sister and mutual childhood friend of Armin.
+									 Mikasa shares an unbreakable bond with Eren following events in their past,
+										and rushes to protect him whenever he is in danger. 
+										Mikasa possesses impressive fighting skill and strength even as a child.
+									
+									As a teen, Mikasa is considered a genius among all the army trainees and is
+									 incredibly skilled at combat and agility. 
+									 She constantly worries for Eren's well-being and lives to protect him.</p>
+							  </div>
+							  </div>
+							  <br>
+							  <div class="textOverImage">
+									<img class="image5"  src="res/Levi.jpg">
+									<div class="image-caption5"><h2>Levi</h2><p class="para"> Levi
+										Levi (????)
+										Birthday: December 25
+										Height: 160 cm (5'3")
+										Weight: 65 kg (143 lbs)
+										Affiliations: Scouting Legion, Special Operations Squad
+										
+										Levi is known as humanity's most powerful soldier. 
+								He's ranked as Captain of the Scouting Legion division.
+								 Levi is also the leader of the Special Operations Squad, 
+								 an elite team that he hand-picked in order to protect Eren Yeager
+								 . While it is said that he is blunt and unapproachable,
+									it is noted that he has a strong respect for structure and discipline. 
+									There are rumors that he was originally part of underground 
+									crime before he became a soldier. Although he often appears to be unfriendly
+									 he cares deeply for his team and has never undervalued human life.
+									  He is also a notorious clean-freak.</p>
+										</div>
+										 </div>
+										 <br>
+								  <div class="textOverImage floatright">
+									<img class="image6"  src="res/Armin.jpg">
+									<div class="image-caption6"><h2>Armin</h2><p class="para"> rmin Arlert (????·?????)
+										Age: 15
+										Birthday: November 3
+										Height: 163 cm (5'4")
+										Weight: 55 kg (121 lbs)
+										Position: 104th Trainees Squad, Scouting Legion
+										Graduation Rank: Outside the top 10
+										
+										Eren's best friend, he is physically weak yet emotionally strong.
+										 Even though lacking in actual combat skills,
+											Armin is a genius in theoretical courses and can make plans even under extreme pressure.
+											 Even so, Armin keeps on thinking that he is weak. 
+											 He himself does not notice the things he does for Eren and Mikasa, 
+											 and believes himself to be completely incompetent and hates himself 
+											 for having to rely on Eren and Mikasa.
+										
+										(Source: Wikipedia)
+										
+										Note: Armin Arlert is the official English translation by Kodansha.</p>
+										 </div>
+										 
+								  </div>
+								  
+	
+	         </div>
+	</body>
+	
+	</html>
+	<style type="text/css">
+#bootnav {
+	background: url('http://assets1.ignimgs.com/2017/03/03/aot-1488568444893_1280w.jpg')
+}
+
+
+
+.navbar-brand{
+		color: white !important;
+	font-family: 'Attack on Courier';
+}
+
+
+		body{
+   background-image: url('res/backg.jpg');
+
+  font-weight: 600;
+}
+textOverImage{
+   float: left;;
+    width: 30%;
+    padding: 5px;
+	position: relative;
+	margin: 5px;
+	color: #333;
+
+    
+}
+
+.floatright
+{
+    float:right;
+}
+
+
+
+    .image-caption1 , .image-caption3, .image-caption5 {
+        display: none;
+	opacity: 0.8;
+	background:#cae5c1;
+	width: 290px;
+	position: absolute;
+	bottom: 0px;
+    padding: 5px;
+    float: left;
+    left: 250px;
+    width: 800px;
+    height: 344px
+    }
+    .image-caption2 , .image-caption4, .image-caption6{
+    display: none;
+	opacity: 0.8;
+	background:#cae5c1;
+	width: 290px;
+	position: absolute;
+	bottom: 0px;
+    padding: 5px;
+    float: right;
+    right: 250px;
+    width: 800px;
+    height: 344
+   }
+        
+.textOverImage{
+    transition:0.5s;
+    
+}
+
+    .textOverImage:hover{
+        transition: 0.9s;
+        transform:scale(0.9)
+
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .para{
+      position: relative;
+      left: 10px;
+      font-family:'cursive';
+      font-size: 25px
+  }
+  #container{
+      margin: 70px;
+      background-color: darkslategray;
+      height:1600px
+      
+  }
+  #loula{
+      font-family: 'Cloister Black Light';
+      font-size:40px ;
+      color: #cae5c1
+  }
+  h2{
+      font-family: 'Cloister Black Light'
+  }
+	</style>
+	<script type="text/javascript">
+		$(".image-caption").slideDown();
+
+var lengthOfDiv = $(".textOverImage").length
+
+// alert(lengthOfDiv)
+for (let index =0; index <= lengthOfDiv ; index++) {
+    $(".image"+index).mouseenter(function(){
+        $(".image-caption"+index).css("display" , "block")
+    })
+    $(".image"+index).mouseleave(function(){
+        $(".image-caption"+index).css("display" , "none")
+    })
+    
+}
+$('#dropbtn').on('mouseenter', function () {
+    $('#dropbtn').click()
+})
+
+$('.dropdown ul').on('mouseleave', function(e) {
+	
+		$('#dropbtn').click()
+})
+
+
+ var config = {
+    apiKey: "AIzaSyBnUzQDWWwb0gPO8ynZpf2OWhRxgI8Jfl0",
+    authDomain: "projet-b638a.firebaseapp.com",
+    databaseURL: "https://projet-b638a.firebaseio.com",
+    projectId: "projet-b638a",
+    storageBucket: "",
+    messagingSenderId: "683334956816"
+  };
+firebase.initializeApp(config);
+var auth = firebase.auth();
+
+var logOut = document.getElementById('outBtn');
+
+// Store
+//localStorage.setItem("lastname", "Smith");
+// Retrieve
+document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+
+logOut.addEventListener('click', e => {
+    window.location.href = "frist.html";
+    auth.signOut();
+    alert.style.display = "none";
+})
+
+auth.onAuthStateChanged(firebaseUser => {
+    if (firebaseUser) { logOut.classList.remove('hide'); }
+    else { logOut.classList.add('hide') }
+})
+	</script>
